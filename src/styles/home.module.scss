@@ -18,6 +18,7 @@
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.106);
 
 }
 
@@ -29,6 +30,7 @@
     background-color: rgb(223, 108, 255);
     color: white;
     font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);
 }
 
 .topic:hover{
@@ -42,6 +44,7 @@
     border-radius: 20px;
     background-color: rgb(161, 46, 238);
     color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);
 }
 
 .type{
@@ -52,6 +55,7 @@
     background-color: rgb(99, 197, 250);
     color: white;
     font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);
     
 }
 
@@ -66,6 +70,7 @@
     border-radius: 20px;
     background-color: rgb(51, 166, 248);
     color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);
 
 }
 
@@ -74,13 +79,14 @@
     margin-top: 30px;
     padding: 10px 18px;
     border-radius: 14px;
-    background-color: rgb(250, 50, 230);
+    background-color: rgb(247, 94, 232);
     color: white;
     font-size: 20px;
     transition: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);
 }
 .action:hover{
-    background-color: rgb(215, 27, 203);
+    background-color: rgb(215, 60, 205);
 }
 .action-disabled, .action-disabled:hover{
     font-family: 'Comic Neue', cursive;
