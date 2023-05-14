@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500&display=swap');
+
+.footer{
+    background-color: #e9e8ec;
+    background-color: #1f1f1f;
+    min-height: 5vh;
+text-align: center;
+padding-top: 5px;
+}
+.creator{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 5px;
+    color: #e9e8ec
+}
+
+.icon{
+    display: inline;
+    width: 16px;
+    margin-right: 4px;
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 700px){
+    .creator{
+        font-size: 11px;
+    }
+}

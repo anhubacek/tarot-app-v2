@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 95vh;
+    background-color: #e9e8ec;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.title{
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+.subtitle{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.cards-container{
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.top-card{
+    width: 20%;
+    margin: 0px 15px;
+    padding: 40px;
+    box-sizing: content-box;
+    background-color: #e9e8ec;
+}
+
+.unique-card{
+    width: 60%;
+}
+.div-card{
+    width: 15%;
+    height: fit-content;
+    background-color: #e9e8ec;
+    padding: 40px;
+    box-sizing: content-box;
+    // margin-bottom: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big-card-container{
+    margin: 30px;
+
+    
+}
+.one-card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+}
+.one-card{
+    width: 20%;
+    padding: 40px;
+    box-sizing: content-box;
+    background-color: #e9e8ec;
+}
+
+.card-text{
+    width: 95%;
+    text-align: justify;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 35px;
+    background-color: #e9e8ec;
+}
+
+.card-title{
+    text-align: center;
+    // margin-top: 15px;
+    font-size: 20px;
+    // margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    background-color: #e9e8ec;
+    width: 95%;
+  
+}
+.back{
+    padding: 10px 18px;
+    border-radius: 14px;
+    background-color: rgb(183, 76, 255);
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.back:hover{
+    background-color: rgb(164, 27, 255);
+}
+
+.loader-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.loader{
+    background-color: rgb(164, 27, 255);
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    animation: pulse 1s ease infinite;
+
+    &:nth-child(1) {
+        animation-delay: -200ms;
+      }
+  
+      &:nth-child(2) {
+        animation-delay: -100ms;
+      }
+  
+      &:nth-child(3) {
+        animation-delay: -50ms;
+      }
+  
+      
+}
+
+@keyframes pulse {
+    0%, 60%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    30% {
+      opacity: .1;
+      transform: scale(.01);
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .container{
+        background-position-x: center;
+    }
+    .title{
+        font-size: 40px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .card-text{
+        width: 95%;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 30px
+    }
+    .big-card-container{
+        margin: 0px;
+    }
+    .div-card{
+        width: 35%;
+        height: fit-content;
+        padding: 10px;
+    }
+    .one-card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .one-card{
+        width: 40%;
+        padding: 10px;
+        box-sizing: content-box;
+        margin-bottom: 15px;
+    }
+
+    .loader{
+        margin: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px
+ 
+    }
+    .top-card{
+    padding: 10px;
+    box-sizing: content-box;
+}
+.back{
+    margin-top: 15px;
+}
+}

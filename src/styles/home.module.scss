@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 95vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.title{
+    margin-top: 30px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.topic{
+    font-family: 'Comic Neue', cursive;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(223, 108, 255);
+    color: white;
+}
+
+.topic:hover{
+    background-color: rgb(161, 46, 238);
+}
+.topic-selected{
+    font-family: 'Comic Neue', cursive;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(161, 46, 238);
+    color: white;
+}
+
+.type{
+    font-family: 'Comic Neue', cursive;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(99, 197, 250);
+    color: white;
+    
+}
+
+.type:hover{
+    background-color: rgb(51, 166, 248);
+}
+.type-selected{
+    font-family: 'Comic Neue', cursive;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(51, 166, 248);
+    color: white;
+
+}
+
+.action{
+    font-family: 'Comic Neue', cursive;
+    margin-top: 30px;
+    padding: 10px 18px;
+    border-radius: 14px;
+    background-color: rgb(255, 107, 240);
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.action:hover{
+    background-color: rgb(249, 8, 233);
+}
+.action-disabled, .action-disabled:hover{
+    font-family: 'Comic Neue', cursive;
+    margin-top: 30px;
+    padding: 10px 18px;
+    border-radius: 14px;
+    background-color: rgb(234, 212, 248);
+    cursor: not-allowed;
+    color: white;
+    font-size: 20px;
+    touch-action: none;
+    // display: none;
+}
+
+
+
+.option-title{
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-family: 'Comic Neue', cursive;
+    background-color: #e9e8ec;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container{
+        background-position-x: center;
+    }
+    .title{
+        font-size: 40px;
+        text-align: center
+    }
+    .option-title{
+        font-size: 18px;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: 'Comic Neue', cursive;
+    }
+}
